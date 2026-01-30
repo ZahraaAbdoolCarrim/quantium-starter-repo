@@ -4,7 +4,7 @@ import pandas as pd
 
 app = Dash()
 df = pd.read_csv('data/daily_sales_data_improved.csv')
-fig = px.scatter(df, x='date', y='sales', color='region')
+fig = px.line(df, x='date', y='sales')
 dcc.Graph(figure=fig)
 
 app.layout = html.Div(children=[
