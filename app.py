@@ -11,7 +11,6 @@ fig.update_layout(
     paper_bgcolor='black',
     font_color='#7FDBFF'
 )
-dcc.Graph(figure=fig)
 
 app.layout = html.Div(
     style={
